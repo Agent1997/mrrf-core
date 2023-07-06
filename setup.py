@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 install_requires = []
 
@@ -9,7 +9,7 @@ setup(
     name='autocore',
     version='1.0.0',
     author='Agent 1997',
-    packages=['','autocore'],
+    packages=find_packages(),
     install_requires=install_requires
 )
 
