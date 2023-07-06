@@ -2,11 +2,9 @@ from setuptools import setup
 
 install_requires = []
 
-with open('requirements.txt', 'r') as requirements_file:
-    for line in requirements_file:
-        package_name = line.strip()
-        install_requires.append(package_name)
-        
+with open('requirements.txt', 'r', encoding='utf-16') as requirements_file:   
+    install_requires = requirements_file.readlines()
+      
 setup(
     name='autocore',
     version='1.0.0',
@@ -14,3 +12,4 @@ setup(
     packages=['web'],
     install_requires=install_requires
 )
+
