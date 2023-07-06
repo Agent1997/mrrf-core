@@ -9,7 +9,7 @@ setup(
     name='autocore',
     version='1.0.0',
     author='Agent 1997',
-    packages=['','web'],
+    packages=['','autocore'],
     install_requires=install_requires
 )
 
