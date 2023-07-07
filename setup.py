@@ -9,7 +9,7 @@ setup(
     name='mrrf_core',
     version='1.0.0',
     author='Agent 1997',
-    packages=find_packages(),
+    packages=find_packages(include=['AssertsLibrary']),
     install_requires=install_requires
 )
 
