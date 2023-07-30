@@ -359,7 +359,7 @@ class WebActions:
             retries -= 1
 
 
-    def open_browser(self, url, browser, options, alias):
+    def open_browser(self, url, browser, options, alias=None):
         """Creates a new web driver and then open the url on the specified browser."""
         self.__ctx.open_browser(url=url, browser=browser, options=options, alias=alias)
 
